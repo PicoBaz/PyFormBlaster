@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+form_fuzzer_results.csv
+.idea

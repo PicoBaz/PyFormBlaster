@@ -1,0 +1,24 @@
+{
+  "formUrl": "https://example.com",
+  "formFields": {
+    "username": "admin",
+    "password": "",
+    "_wpnonce": ""
+  },
+  "payloadConfig": {
+    "maxAttempts": 100,
+    "delayMs": 1000,
+    "maxRetries": 3,
+    "randomInputLength": 10,
+    "maliciousPayloadChance": 0.3,
+    "fuzzFields": ["username", "password"],
+    "maliciousFields": ["username", "password"],
+    "autoDetectFields": true
+  },
+  "characters": {
+    "lowercase": "abcdefghijklmnopqrstuvwxyz",
+    "uppercase": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+    "numbers": "0123456789",
+    "special": "!@#$%^&*()_+-=[]{}|;:,.<>?"
+  }
+}
